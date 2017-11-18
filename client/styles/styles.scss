@@ -1,1 +1,48 @@
 @import 'normalize';
+
+.search-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100vh;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-list {
+    flex-basis: 50%;
+
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.search-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+    // Descendant elems:
+    img {
+        height: 100%;
+        width: 100px;
+        object-fit: contain;
+    }
+    //
+    // p {
+    //     flex-basis: 40%;
+    // }
+
+    & * {
+        flex: 0 auto;
+    }
+}
+
+.product-info {
+    flex-basis: 50%;
+}
+
+img {
+    max-width: 100%;
+}
