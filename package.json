@@ -22,7 +22,9 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
-    "jquery": "^3.2.1"
+    "body-parser": "^1.18.2",
+    "jquery": "^3.2.1",
+    "mongoose": "^4.13.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

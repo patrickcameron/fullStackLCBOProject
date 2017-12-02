@@ -1,46 +1,67 @@
 @import 'normalize';
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+body {
+    font-family: Georgia;
+    font-weight: 100;
+}
 
 .search-wrapper {
     display: flex;
     flex-wrap: wrap;
 
     height: 100vh;
+    max-height: 100vh;
 }
 
 .search-input {
     width: 100%;
 }
 
-.search-list {
-    flex-basis: 50%;
+.search, .product-info {
+    flex-basis: 40%;
 
     height: 100%;
     overflow-y: scroll;
+}
+
+.product-info {
+    flex-basis: 60%;
+
+    display: flex;
+}
+
+.product-info__img {
+    width: 50%;
+}
+
+.product-info__txt {
+    width: 50%;
 }
 
 .search-item {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-right: 30px;
 
     // Descendant elems:
     img {
         height: 100%;
-        width: 100px;
+        width: 70px;
         object-fit: contain;
     }
-    //
-    // p {
-    //     flex-basis: 40%;
-    // }
 
     & * {
         flex: 0 auto;
     }
-}
 
-.product-info {
-    flex-basis: 50%;
+    &:hover {
+        background: black;
+        color: white;
+    }
 }
 
 img {
